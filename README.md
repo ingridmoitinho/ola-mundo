@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Olá Mundo 🌎
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Olá mundo é um projeto criado com o objetivo de **aprender e aplicar conceitos fundamentais do React Router** e boas práticas no desenvolvimento de aplicações React. Foi desenvolvido no curso **"React: Desenvolvendo em React Router com JavaScript"** da **Especialização Front-End React** oferecida pela Oracle One e Alura.  
 
-## Available Scripts
+- [Olá mundo - Figma](https://www.figma.com/design/svxB0KZaJIuqJdIaC7c7CF).
+  
+## 💡 Sobre o Projeto  
+Este é um projeto introdutório para explorar o funcionamento de rotas em aplicações React. O foco principal foi compreender e implementar navegação entre páginas, tratamento de erros e reutilização de componentes, utilizando o React Router.
 
-In the project directory, you can run:
+## 📚 Tecnologias Utilizadas  
+- **React**  
+- **React Router DOM**  
+- **JavaScript (ES6+)**  
+- **CSS Modules**  
 
-### `npm start`
+## 🚀 Funcionalidades  
+- Navegação entre diferentes páginas utilizando **React Router**.  
+- Utilização de **rotas aninhadas** para reaproveitar componentes.  
+- Implementação de boas práticas, como o uso de **componentes reutilizáveis** e o hook `useNavigate`.  
+- Tratamento de páginas não encontradas (404).  
+- Adição de um botão customizado (componente `BotaoPrincipal`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Aprendizados  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Diferenciar o comportamento de sites tradicionais e de SPAs  
+- **Sites Tradicionais:** Compostos por várias páginas HTML, onde cada navegação realiza uma requisição ao servidor para carregar uma nova página.  
+- **SPAs (Single Page Applications):** Compostas por uma única página HTML, onde o conteúdo é alterado dinamicamente por JavaScript, sem a necessidade de recarregar a página.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Utilizar o componente Link do react-router-dom  
+- **Comportamento SPA:** O `Link` evita o recarregamento completo da página ao navegar, mantendo a fluidez da aplicação.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Utilizar o hook useLocation  
+- Permite obter informações detalhadas sobre a rota atual, como o caminho, estado e parâmetros.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Utilizar o componente NavLink do react-router-dom  
+- Proporciona acesso direto ao estado do link (ativo ou inativo), permitindo estilização condicional.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Identificar quando utilizar rotas aninhadas  
+- **Exemplo:** As páginas `Inicio` e `SobreMim` foram configuradas como filhas de `PaginaPadrao` para reutilizar a estrutura de layout.  
+- **Caso Especial:** Excluímos o `Banner` na página `404`, mostrando que nem todas as páginas herdam o layout padrão.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Utilizar o componente Outlet  
+- Um `Outlet` indica onde os componentes filhos serão renderizados dentro de uma rota pai.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### Utilizar o atributo index do Route  
+- O atributo `index` define que a rota é igual ao caminho da rota pai, sendo útil para rotas padrão dentro de um grupo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
