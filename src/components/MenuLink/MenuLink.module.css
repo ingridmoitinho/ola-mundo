@@ -4,6 +4,6 @@
     color: var(--cor-fonte-principal);
 }
 
-.isActive {
+.linkDestacado {
     text-decoration: underline;
 }

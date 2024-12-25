@@ -7,7 +7,7 @@ export default function Banner() {
      <div className={styles.banner}>          
      <div>
     <h1 className={styles.titulo}>Olá, mundo!</h1>
-    <p className={styles.paragrafo}>Boas vindas ao meu espaço pessoal! Eu sou Ingrid Moitinho, aluna de Front-end da Alura. Aqui compartilho vários conhecimentos, espero que aprenda algo novo :D </p>
+    <p className={styles.paragrafo}>Boas vindas ao meu espaço pessoal! Eu sou Ingrid Moitinho, aluna de Front-end da Alura. Aqui compartilho vários conhecimentos, espero que aprenda algo novo ✨ </p>
     </div>
     <div className={styles.imagens}>
         <img className={styles.circuloColorido} 
